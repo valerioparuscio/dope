@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
     <title>Dope Boardgame</title>
     <style>
         @font-face {
@@ -37,5 +38,19 @@
         async src="//gc.zgo.at/count.js"></script>
 <body>
     <a href="https://boardgamegeek.com/boardgame/428791/dope">BGG</a>
+    <bsky-embed
+    username="vincentwill.com"
+    feed="at://...(decide between username, feed, or search)"
+    search="#BuildInPublic (decide between username, feed, and search)"
+    mode="dark"
+    limit="5"
+    link-target="_blank"
+    link-image="true"
+    load-more="true"
+    disable-styles="false"
+    custom-styles=".border-slate-300 { border-color: red; }"
+    date-format='{"type":"absolute","locale":"de-DE","options":{"weekday":"long","year":"numeric","month":"long","day":"numeric"}}'
+  >
+  </bsky-embed>
 </body>
 </html>

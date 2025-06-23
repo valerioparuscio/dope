@@ -6,6 +6,22 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
     <title>Dope Boardgame</title>
     <style>
+        
+        .form-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            padding: 10px;
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+          }
+
+        .form-container iframe {
+            width: 300px;
+            height: 400px;
+          }
         @font-face {
             font-family: 'Terror Babble';
             src: url('terrorbabble.ttf') format('truetype');
@@ -34,13 +50,15 @@
         }
     </style>
 
-     <h1>Iscriviti alla nostra newsletter</h1>
+     <h1></h1>
 
-      <!-- Qui viene incorporato il Google Form -->
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4Q94vjNy7Wqh88aNTateMNR5JGcp8w0jnasrq2ZQ6zKTgFw/viewform?embedded=true" 
-          width="640" height="405" frameborder="0" marginheight="0" marginwidth="0">
-          Caricamento…
-      </iframe>
+      <!-- Container per posizionare il form -->
+        <div class="form-container">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXXXXXXX/viewform?embedded=true"
+                  width="320" height="400" frameborder="0" marginheight="0" marginwidth="0">
+            Caricamento…
+          </iframe>
+        </div>
 
 
     

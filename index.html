@@ -5,27 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
     <title>Dope Boardgame</title>
-    <style>
-        
-        .form-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            z-index: 1000;
-            padding: 10px;
-            background: white;
-            border: 1px solid #ccc;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
-          }
 
-        .form-container iframe {
-            width: 300px;
-            height: 400px;
-          }
+    <style>
         @font-face {
             font-family: 'Terror Babble';
             src: url('terrorbabble.ttf') format('truetype');
         }
+
         body {
             margin: 0;
             padding: 0;
@@ -34,6 +20,7 @@
             background-size: 100% auto;
             text-align: center;
         }
+
         a {
             display: block;
             font-size: 86px;
@@ -45,28 +32,44 @@
             border-radius: 10px;
             font-family: 'Terror Babble', sans-serif;
         }
+
         a:hover {
             background: rgba(0, 0, 0, 0.8);
         }
+
+        .form-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            width: 25vw;         /* un quarto della larghezza */
+            height: 50vh;        /* metà altezza dello schermo */
+            padding: 10px;
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .form-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
-
-     <h1></h1>
-
-      <!-- Container per posizionare il form -->
-        <div class="form-container">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXXXXXXX/viewform?embedded=true"
-                  width="800" height="1200" frameborder="0" marginheight="0" marginwidth="0">
-            Caricamento…
-          </iframe>
-        </div>
-
-
-    
 </head>
+
+<body>
+    <!-- Link esempio -->
+    <a href="#">Inizia a giocare</a>
+
+    <!-- Modulo Google Form incorporato -->
+    <div class="form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXXXXXXX/viewform?embedded=true">
+            Caricamento…
+        </iframe>
+    </div>
+
     <script data-goatcounter="https://dope-game.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-<body>
-    
-
 </body>
 </html>
